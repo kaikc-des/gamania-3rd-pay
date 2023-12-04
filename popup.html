@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="1szh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三方支付</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/customize.css" />
+</head>
+
+<body class="customize">
+    <!-- 回頂部btn Start -->
+    <a href="#" id="gototop" onclick="topFunction()"><i class="bi bi-arrow-bar-up"></i></a>
+    <!-- 回頂部btn End -->
+
+    <!-- 導覽列選單 Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo/logo_marko.png" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- 導覽列選單 End -->
+
+    <!-- 彈跳視窗 Start -->
+    <!-- @231201 Start -->
+    <!-- 登入跳窗 -->
+    <div class="modal fade" id="login-modal">
+        <div id="login" class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></a>
+                <div class="modal-body">
+                    <div class="body-head">
+                        <h5 class="head-title">登入</h5>
+                    </div>
+                    <div class="body-content">
+
+                        <ul class="left-area">
+                            <li>
+                                <img class="brand-logo" src="images/logo/logo_bf!.png" alt="">
+                                <span>還沒有帳戶<a href="#">註冊</a></span>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <input type="text" id="input-id" class="form-control" placeholder="請輸入beanfun!帳號">
+                                    <div class="tip text-red">* Error message</div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="input-id" class="form-control" placeholder="請輸入beanfun!帳號">
+                                    <div class="tip text-red">* Error message</div>
+                                </div>
+                            </li>
+                            <li>
+                                <button type="submit" class="btn btn-outline-dark">登入</button>
+                            </li>
+                            <li>
+                                <a href="#">忘記帳號/密碼</a><a href="#">綁定教學</a>
+                            </li>
+                        </ul>
+                        <ul class="right-area">
+                            <li><button type="button" class="btn btn-outline-dark qr" data-toggle="modal" data-target="#qr-modal"><i class="bi bi-qr-code-scan"></i> QR Code 登入</button></li>
+                            <li><button type="button" class="btn btn-outline-dark google"><i class="bi bi-google"></i> Google 登入</button></li>
+                            <li><button type="button" class="btn btn-outline-dark apple"><i class="bi bi-apple"></i> Apple 登入</button></li>
+                            <li><button type="button" class="btn btn-outline-dark facebook"><i class="bi bi-facebook"></i> Facebook 登入</button></li>
+                        </ul>
+                    </div>
+                    <div class="body-footer">
+                        <p>* 註冊即表示您同意<a href="#">使用條款</a>並確認已閱讀<a href="#">隱私權政策</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR Code跳窗 -->
+    <div class="modal fade" id="qr-modal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></a>
+                <div class="modal-body">
+                    <div class="body-head">
+                        <h5 class="head-title">QR 碼登入</h5>
+                    </div>
+                    <div class="body-content">
+                        <ul>
+                            <li>
+                                請利用相機掃描以下 QR 碼，登入beanfun!請利用相機掃描以下 QR 碼，登入beanfun!
+                            </li>
+                            <li><img src="images/qr.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 購買成功 跳窗 -->
+    <div class="modal fade" id="success-modal" role="dialog" aria-labelledby="Success-Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></a>
+                <div class="modal-body">
+                    <div class="body-head icon">
+                        <i class="bi bi-check-circle"></i>
+                        <h5 class="head-title">您已購買成功!</h5>
+                    </div>
+                    <div class="body-content">
+                        <ul>
+                            <li>XD23573 用戶，您所購買的【鑽石大禮包】禮派發至您的遊戲禮物盒中，詳細領取資訊請參考購買教學，若有任何問題請洽客服中心。</li>
+                            <li>感謝您對XXX的支持！</li>
+                        </ul>
+                    </div>
+                    <div class="body-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- @231201 End -->
+
+    <!-- @231201 新增語言與地區 跳窗 Start -->
+    <!-- 語言與地區 跳窗 -->
+    <div class="modal fade" id="community-modal" role="dialog" aria-labelledby="Community" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></a>
+                <div class="modal-body">
+                    <div class="body-head">
+                        <h5 class="head-title">語言與地區</h5>
+                    </div>
+                    <div class="body-content">
+                        <ul>
+                            <li class="d-flex align-items-center mb-3">
+                                <span class="mr-1">自動翻譯</span>
+                                <i class="bi bi-translate"></i>
+                                <div class="ml-2">
+                                    <input type="checkbox" id="switch" /><label for="switch"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text-left">請選擇語言</div>
+                                <select class="form-select" aria-label="select">
+                                    <option value=""></option>
+                                    <option value="橘子支付">繁體中文</option>
+                                    <option value="GASH">简体中文</option>
+                                    <option value="信用卡">日本語</option>
+                                    <option value="銀行轉帳">한국어</option>
+                                    <option value="超商取貨付款">English</option>
+                                </select>
+                            </li>
+                            <li>
+                                <div class="text-left">請選擇地區</div>
+                                <select class="form-select" aria-label="select">
+                                    <option value=""></option>
+                                    <option value="橘子支付">台灣</option>
+                                    <option value="GASH">中国</option>
+                                    <option value="信用卡">香港</option>
+                                    <option value="銀行轉帳">日本</option>
+                                    <option value="超商取貨付款">대한민국</option>
+                                    <option value="超商取貨付款">United States</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- @231201 新增語言與地區 跳窗 End -->
+
+    <!-- 彈跳視窗 End -->
+
+    <div class="container-fluid bg-light p-5" style="height: 100vh;">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-3 d-flex justify-content-end align-items-center bg-dark p-3">
+                    <div class="text-right">
+                        <h1 class="font-weight-bold" style="font-size: 24px">會員登入</h1>
+                        <span class="text-secondary">Navbar popup</span>
+                    </div>
+                </div>
+                <div class="col-9 d-flex align-items-center bg-secondary p-3">
+                    <button class="btn btn-light" type="button" data-toggle="modal" data-target="#login-modal"><i class="bi bi-person"></i> 登入</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 d-flex justify-content-end align-items-center bg-dark p-3">
+                    <div class="text-right">
+                        <h1 class="font-weight-bold" style="font-size: 24px">QR-code</h1>
+                        <span class="text-secondary">Navbar popup</span>
+                    </div>
+                </div>
+                <div class="col-9 d-flex align-items-center bg-secondary p-3">
+                    <button type="button" class="btn btn-outline-dark qr" data-toggle="modal" data-target="#qr-modal"><i class="bi bi-qr-code-scan"></i> QR Code 登入</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 d-flex justify-content-end align-items-center bg-dark p-3">
+                    <div class="text-right">
+                        <h1 class="font-weight-bold" style="font-size: 24px">語言與區域</h1>
+                        <span class="text-secondary">Navbar popup</span>
+                    </div>
+                </div>
+                <div class="col-9 d-flex align-items-center bg-secondary p-3">
+                    <div class="d-flex align-items-center mr-5">
+                        <span class="mr-3">PC</span>
+                        <button class="btn btn-dark community" style="padding: 12px; border-radius: 22px;" type="button" data-toggle="modal" data-target="#community-modal">
+                            <div class="language">
+                                <i class="bi bi-globe"></i>
+                                <span style="display: none;">繁體中文</span>
+                            </div>
+                            <div class="region" style="display: none;">
+                                <i class="bi bi-geo-alt"></i>
+                                <span>台灣</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center mr-3">
+                        <span class="mr-3">Mb</span>
+                        <button class="btn btn-dark community" style="padding: 9px 16px; border-radius: 22px;" type="button" data-toggle="modal" data-target="#community-modal">
+                            <div class="language mr-1" style="display: inline-block;">
+                                <i class="bi bi-globe"></i>
+                                <span>繁體中文</span>
+                            </div>
+                            <div class="region" style="display: inline-block;">
+                                <i class="bi bi-geo-alt"></i>
+                                <span>台灣</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 d-flex justify-content-end align-items-center bg-dark p-3">
+                    <div class="text-right">
+                        <h1 class="font-weight-bold" style="font-size: 24px">order_check.html</h1>
+                        <span class="text-secondary">popup</span>
+                    </div>
+                </div>
+                <div class="col-9 d-flex align-items-center bg-secondary p-3">
+                    <button type="submit" class="btn btn-dark" data-toggle="modal" data-target="#success-modal">確認訂單內容</button>
+                </div>
+            </div>
+            <div class="row bg-black text-center p-3">
+                <div class="col-12">
+                    按鈕正確樣式以原來各頁顯示為主
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 商品分類 Start -->
+
+    <!-- jquery-3.3.1 -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- bootstrap 4.2.1 -->
+    <script src="vendor/bootstrap/popper.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- @231124 新增 bootstrap plug input-spinner -->
+    <script src="vendor/bootstrap-input-spinner.js"></script>
+
+    <!-- 客製 -->
+    <script type="text/javascript" src="js/creative.js"></script>
+
+</body>
+
+</html>

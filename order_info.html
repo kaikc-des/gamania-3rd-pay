@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="1szh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三方支付</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/customize.css" />
+</head>
+
+<body class="customize">
+    <!-- 回頂部btn Start -->
+    <a href="#" id="gototop" onclick="topFunction()"><i class="bi bi-arrow-bar-up"></i></a>
+    <!-- 回頂部btn End -->
+
+    <!-- 導覽列選單 Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo/logo_marko.png" alt="">
+                </a>
+
+                <!-- @231124 修改 Start -->
+                <!-- 選單按鈕 -->
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+                <!-- 選單按鈕 End -->
+                <!-- @231124 修改 End -->
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- @231124 刪除
+                    <form class="form-inline mr-0">
+                        <div class="user-content">
+                            <h1>beanfun_f_fans</h1>
+                            <p>您好，</p>
+                        </div>
+                        <button class="btn btn-light" type="button"><i class="bi bi-person"></i> 登出</button>
+                    </form>
+                    -->
+
+                    <!-- @231124 新增 Start -->
+                    <!-- 使用者資訊 Start -->
+                    <form class="form-inline user-login">
+                        <div class="user-content">
+                            <div class="user-name">
+                                <span class="user-text ellipsis">beanfun_f_fans_fans</span>
+                                <p>您好，</p>
+                            </div>
+                            <div class="user-point">
+                                紅利<span class="point"><i class="bi bi-p-circle-fill"></i><span class="user-text ellipsis">$99,999,999</span></span>
+                            </div>
+                        </div>
+                        <button class="btn btn-light" type="button" data-toggle="modal" data-target="#login-modal"><span><i class="bi bi-person"></i>登出</span></button>
+                    </form>
+                    <!-- 使用者資訊 End -->
+                    <!-- @231124 新增 End -->
+
+                    <ul class="navbar-nav section-01"><!-- @231201 刪除 m-auto -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">購買教學</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">購買紀錄</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">客服中心</a>
+                        </li>
+                    </ul>
+
+                    <!-- @231201 刪除
+                    <ul class="navbar-nav section-02 mr-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-globe"></i> 繁體中文
+                            </a>
+                            <div class="dropdown-menu language" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">简体中文</a>
+                                <a class="dropdown-item" href="#">日本語</a>
+                                <a class="dropdown-item" href="#">한국어</a>
+                                <a class="dropdown-item" href="#">English</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-geo-alt"></i>台灣
+                            </a>
+                            <div class="dropdown-menu map-pin" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">中国</a>
+                                <a class="dropdown-item" href="#">香港</a>
+                                <a class="dropdown-item" href="#">日本</a>
+                                <a class="dropdown-item" href="#">대한민국</a>
+                                <a class="dropdown-item" href="#">United States</a>
+                            </div>
+                        </li>
+                    </ul>
+                    -->
+
+                    <!-- @231201 新增 Start -->
+                    <button class="btn btn-dark community" type="button" data-toggle="modal" data-target="#community">
+                        <div class="language">
+                            <i class="bi bi-globe"></i>
+                            <span>繁體中文</span>
+                        </div>
+                        <div class="region">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>台灣</span>
+                        </div>
+                    </button>
+                    <!-- @231201 新增 End -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 導覽列選單 End -->
+
+    <!-- 訂單明細 Start -->
+    <div id="order" class="container">
+        <h1 class="head-title">訂單明細</h1>
+        <div class="content">
+            <div class="order-info">
+                <div class="row">
+                    <h3>訂單編號</h3>
+                    <span>XY6111973066</span>
+                </div>
+                <div class="row">
+                    <h3>訂單日期</h3>
+                    <span>2021/06/03 23:59</span>
+                </div>
+                <div class="row">
+                    <h3>訂單狀態</h3>
+                    <span>已完成</span>
+                </div>
+            </div>
+            <div class="table">
+                <div class="row header">
+                    <div class="cell image"></div>
+                    <div class="cell name">商品名稱</div>
+                    <div class="cell info">商品內容</div>
+                    <div class="cell quantity">數量</div>
+                    <div class="cell price">單價</div>
+                </div>
+                <div class="row">
+                    <div class="cell image"><img src="images/pro_img_100x100.jpg" alt=""></div>
+                    <div class="cell name" data-title="商品名稱">小丸子禮包小丸子禮包小丸子禮包小丸子禮包小丸子禮包</div>
+                    <div class="cell info" data-title="商品內容">
+                        <p>內容項目_01</p>
+                        <p>內容項目_02</p>
+                        <p>內容項目_03</p>
+                        <a href="#">more..</a>
+                    </div>
+                    <div class="cell quantity" data-title="數量">1</div>
+                    <div class="cell price" data-title="單價">$9,999</div>
+                </div>
+                <div class="row">
+                    <div class="cell image"><img src="images/pro_img_100x100.jpg" alt=""></div>
+                    <div class="cell name" data-title="商品名稱">小丸子禮包</div>
+                    <div class="cell info" data-title="商品內容">
+                        <p>01_內容項目</p>
+                        <p>02_內容項目</p>
+                        <p>03_內容項目</p>
+                        <a href="#">more..</a>
+                    </div>
+                    <div class="cell quantity" data-title="數量">999</div>
+                    <div class="cell price" data-title="單價">$9,999</div>
+                </div>
+                <div class="row">
+                    <div class="cell image"><img src="images/pro_img_100x100.jpg" alt=""></div>
+                    <div class="cell name" data-title="商品名稱">小丸子禮包小丸子禮包小丸子禮包小丸子禮包小丸子禮包</div>
+                    <div class="cell info" data-title="商品內容">
+                        <p>01_內容項目內容項目內容項目內容項目內容項目內容項目</p>
+                        <p>02_內容項目內容項目內容項目內容項目內容項目內容項目</p>
+                        <p>03_內容項目內容項目內容項目內容項目內容項目內容項目</p>
+                        <a href="#">more..</a>
+                    </div>
+                    <div class="cell quantity" data-title="數量">99</div>
+                    <div class="cell price" data-title="單價">$9,999</div>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="body">
+                    <ul>
+                        <li class="flex-row justify-content-between">
+                            <h6 class="title">商品合計金額</h6>
+                            <div class="d-flex price">NT$99,999</div>
+                        </li>
+                        <li class="flex-row justify-content-between">
+                            <h6 class="title">付款方式</h6>
+                            <div class="d-flex price">GASH信用卡</div>
+                        </li>
+                        <li class="flex-row justify-content-between">
+                            <h6 class="title">使用紅利</h6>
+                            <div class="d-flex text-red font-weight-bold">9,999p(NT$199)</div>
+                        </li>
+                        <li class="hr"></li>
+                        <li class="flex-row justify-content-between align-items-center font-weight-bold">
+                            <h6 class="title">付款總金額</h6>
+                            <div class="total-price text-red">NT$999,999</div>
+                        </li>
+                        <li class="tip flex-row justify-content-between">
+                            <h6 class="title">回饋紅利 <i class="bi bi-exclamation-circle"></i></h6>
+                            <div class="text-red">+9,999p(NT$199)</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-outline-light">返回</button>
+            </div>
+        </div>
+    </div>
+    <!-- 訂單內容 End -->
+
+    <!-- jquery-3.3.1 -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- bootstrap 4.2.1 -->
+    <script src="vendor/bootstrap/popper.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- @231124 新增 bootstrap plug input-spinner -->
+    <script src="vendor/bootstrap-input-spinner.js"></script>
+
+    <!-- 客製 -->
+    <script type="text/javascript" src="js/creative.js"></script>
+</body>
+
+</html>
