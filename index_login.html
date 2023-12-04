@@ -12,20 +12,13 @@
 </head>
 
 <body class="customize">
-    <!-- 回頂部btn Start -->
     <a href="#" id="gototop" onclick="topFunction()"><i class="bi bi-arrow-bar-up"></i></a>
-    <!-- 回頂部btn End -->
-
-    <!-- 導覽列選單 Start -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo/logo_marko.png" alt="">
                 </a>
-
-                <!-- @231124 修改 Start -->
-                <!-- 選單按鈕 -->
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span id="nav-icon3">
                         <span></span>
@@ -34,23 +27,7 @@
                         <span></span>
                     </span>
                 </button>
-                <!-- 選單按鈕 End -->
-                <!-- @231124 修改 End -->
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <!-- @231124 刪除
-                    <form class="form-inline mr-0">
-                        <div class="user-content">
-                            <h1>beanfun_f_fans</h1>
-                            <p>您好，</p>
-                        </div>
-                        <button class="btn btn-light" type="button"><i class="bi bi-person"></i> 登出</button>
-                    </form>
-                    -->
-
-                    <!-- @231124 新增 Start -->
-                    <!-- 使用者資訊 Start -->
                     <form class="form-inline user-login">
                         <div class="user-content">
                             <div class="user-name">
@@ -63,10 +40,7 @@
                         </div>
                         <button class="btn btn-light" type="button" data-toggle="modal" data-target="#login-modal"><span><i class="bi bi-person"></i>登出</span></button>
                     </form>
-                    <!-- 使用者資訊 End -->
-                    <!-- @231124 新增 End -->
-
-                    <ul class="navbar-nav section-01"><!-- @231201 刪除 m-auto -->
+                    <ul class="navbar-nav section-01">
                         <li class="nav-item">
                             <a class="nav-link" href="#">購買教學</a>
                         </li>
@@ -77,36 +51,6 @@
                             <a class="nav-link" href="#">客服中心</a>
                         </li>
                     </ul>
-
-                    <!-- @231201 刪除
-                    <ul class="navbar-nav section-02 mr-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bi bi-globe"></i> 繁體中文
-                            </a>
-                            <div class="dropdown-menu language" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">简体中文</a>
-                                <a class="dropdown-item" href="#">日本語</a>
-                                <a class="dropdown-item" href="#">한국어</a>
-                                <a class="dropdown-item" href="#">English</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bi bi-geo-alt"></i>台灣
-                            </a>
-                            <div class="dropdown-menu map-pin" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">中国</a>
-                                <a class="dropdown-item" href="#">香港</a>
-                                <a class="dropdown-item" href="#">日本</a>
-                                <a class="dropdown-item" href="#">대한민국</a>
-                                <a class="dropdown-item" href="#">United States</a>
-                            </div>
-                        </li>
-                    </ul>
-                    -->
-
-                    <!-- @231201 新增 Start -->
                     <button class="btn btn-dark community" type="button" data-toggle="modal" data-target="#community">
                         <div class="language">
                             <i class="bi bi-globe"></i>
@@ -117,14 +61,10 @@
                             <span>台灣</span>
                         </div>
                     </button>
-                    <!-- @231201 新增 End -->
                 </div>
             </div>
         </nav>
     </header>
-    <!-- 導覽列選單 End -->
-
-    <!-- 輪播banner Start -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -157,12 +97,7 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!-- 輪播banner End -->
-
-    <!-- 商品分類 Start -->
     <div id="classify" class="container">
-
-        <!-- 分類頁籤 Start -->
         <div class="class-nav">
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
@@ -193,12 +128,7 @@
                 <option value="3">其他</option>
             </select>
         </div>
-        <!-- 分類頁籤 End -->
-
-        <!-- 商品列表 Start -->
         <div class="tab-content" id="myTabContent">
-
-            <!-- 分類頁籤all-tab 內容 Start -->
             <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
                 <div class="pro-content">
                     <div class="card">
@@ -219,30 +149,11 @@
                                     <li>商品內容02商品內容02商品內容02商品內容02商品內容02</li>
                                     <li>商品內容03商品內容03商品內容03商品內容03商品內容03</li>
                                 </ul>
-
-                                <!-- @231124 修改 文字按鈕 Start -->
                                 <a href="#">more...</a>
-                                <!-- @231124 刪除 文字按鈕 End -->
-
                             </div>
-
-                            <!-- @231124 刪除 支付方式下拉選單
-                            <select class="form-select" aria-label="select">
-                                <option selected>橘子支付</option>
-                                <option value="1">GASH</option>
-                                <option value="2">信用卡</option>
-                                <option value="3">銀行轉帳</option>
-                                <option value="2">超商取貨付款</option>
-                                <option value="3">宅配取貨付款</option>
-                            </select>
-                            -->
-
-                            <!-- @231124 新增 商品數量輸入 Start -->
                             <div class="product-quantity">
                                 <input type="number" value="1" min="1">
                             </div>
-                            <!-- @231124 新增 商品數量輸入 End -->
-
                             <a href="#" class="btn btn-dark">立即購買</a>
                         </div>
                     </div>
@@ -264,30 +175,11 @@
                                     <li>商品內容02商品內容02商品內容02商品內容02商品內容02</li>
                                     <li>商品內容03商品內容03商品內容03商品內容03商品內容03</li>
                                 </ul>
-
-                                <!-- @231124 修改 文字按鈕 Start -->
                                 <a href="#">more...</a>
-                                <!-- @231124 刪除 文字按鈕 End -->
-
                             </div>
-
-                            <!-- @231124 刪除 支付方式下拉選單
-                            <select class="form-select" aria-label="select">
-                                <option selected>橘子支付</option>
-                                <option value="1">GASH</option>
-                                <option value="2">信用卡</option>
-                                <option value="3">銀行轉帳</option>
-                                <option value="2">超商取貨付款</option>
-                                <option value="3">宅配取貨付款</option>
-                            </select>
-                            -->
-
-                            <!-- @231124 新增 商品數量輸入 Start -->
                             <div class="product-quantity">
                                 <input type="number" value="1" min="1">
                             </div>
-                            <!-- @231124 新增 商品數量輸入 End -->
-
                             <a href="#" class="btn btn-dark">立即購買</a>
                         </div>
                     </div>
@@ -309,30 +201,11 @@
                                     <li>商品內容02商品內容02商品內容02商品內容02商品內容02</li>
                                     <li>商品內容03商品內容03商品內容03商品內容03商品內容03</li>
                                 </ul>
-
-                                <!-- @231124 修改 文字按鈕 Start -->
                                 <a href="#">more...</a>
-                                <!-- @231124 刪除 文字按鈕 End -->
-
                             </div>
-
-                            <!-- @231124 刪除 支付方式下拉選單
-                            <select class="form-select" aria-label="select">
-                                <option selected>橘子支付</option>
-                                <option value="1">GASH</option>
-                                <option value="2">信用卡</option>
-                                <option value="3">銀行轉帳</option>
-                                <option value="2">超商取貨付款</option>
-                                <option value="3">宅配取貨付款</option>
-                            </select>
-                            -->
-
-                            <!-- @231124 新增 商品數量輸入 Start -->
                             <div class="product-quantity">
                                 <input type="number" value="1" min="1">
                             </div>
-                            <!-- @231124 新增 商品數量輸入 End -->
-
                             <a href="#" class="btn btn-dark">立即購買</a>
                         </div>
                     </div>
@@ -354,30 +227,11 @@
                                     <li>商品內容02商品內容02商品內容02商品內容02商品內容02</li>
                                     <li>商品內容03商品內容03商品內容03商品內容03商品內容03</li>
                                 </ul>
-
-                                <!-- @231124 修改 文字按鈕 Start -->
                                 <a href="#">more...</a>
-                                <!-- @231124 刪除 文字按鈕 End -->
-
                             </div>
-
-                            <!-- @231124 刪除 支付方式下拉選單
-                            <select class="form-select" aria-label="select">
-                                <option selected>橘子支付</option>
-                                <option value="1">GASH</option>
-                                <option value="2">信用卡</option>
-                                <option value="3">銀行轉帳</option>
-                                <option value="2">超商取貨付款</option>
-                                <option value="3">宅配取貨付款</option>
-                            </select>
-                            -->
-
-                            <!-- @231124 新增 商品數量輸入 Start -->
                             <div class="product-quantity">
                                 <input type="number" value="1" min="1">
                             </div>
-                            <!-- @231124 新增 商品數量輸入 End -->
-
                             <a href="#" class="btn btn-dark">立即購買</a>
                         </div>
                     </div>
@@ -399,30 +253,11 @@
                                     <li>商品內容02商品內容02商品內容02商品內容02商品內容02</li>
                                     <li>商品內容03商品內容03商品內容03商品內容03商品內容03</li>
                                 </ul>
-
-                                <!-- @231124 修改 文字按鈕 Start -->
                                 <a href="#">more...</a>
-                                <!-- @231124 刪除 文字按鈕 End -->
-
                             </div>
-
-                            <!-- @231124 刪除 支付方式下拉選單
-                            <select class="form-select" aria-label="select">
-                                <option selected>橘子支付</option>
-                                <option value="1">GASH</option>
-                                <option value="2">信用卡</option>
-                                <option value="3">銀行轉帳</option>
-                                <option value="2">超商取貨付款</option>
-                                <option value="3">宅配取貨付款</option>
-                            </select>
-                            -->
-
-                            <!-- @231124 新增 商品數量輸入 Start -->
                             <div class="product-quantity">
                                 <input type="number" value="1" min="1">
                             </div>
-                            <!-- @231124 新增 商品數量輸入 End -->
-
                             <a href="#" class="btn btn-dark">立即購買</a>
                         </div>
                     </div>
@@ -444,30 +279,11 @@
                                     <li>商品內容02商品內容02商品內容02商品內容02商品內容02</li>
                                     <li>商品內容03商品內容03商品內容03商品內容03商品內容03</li>
                                 </ul>
-
-                                <!-- @231124 修改 文字按鈕 Start -->
                                 <a href="#">more...</a>
-                                <!-- @231124 刪除 文字按鈕 End -->
-
                             </div>
-
-                            <!-- @231124 刪除 支付方式下拉選單
-                            <select class="form-select" aria-label="select">
-                                <option selected>橘子支付</option>
-                                <option value="1">GASH</option>
-                                <option value="2">信用卡</option>
-                                <option value="3">銀行轉帳</option>
-                                <option value="2">超商取貨付款</option>
-                                <option value="3">宅配取貨付款</option>
-                            </select>
-                            -->
-
-                            <!-- @231124 新增 商品數量輸入 Start -->
                             <div class="product-quantity">
                                 <input type="number" value="1" min="1">
                             </div>
-                            <!-- @231124 新增 商品數量輸入 End -->
-
                             <a href="#" class="btn btn-dark">立即購買</a>
                         </div>
                     </div>
@@ -489,30 +305,11 @@
                                     <li>商品內容02商品內容02商品內容02商品內容02商品內容02</li>
                                     <li>商品內容03商品內容03商品內容03商品內容03商品內容03</li>
                                 </ul>
-
-                                <!-- @231124 修改 文字按鈕 Start -->
                                 <a href="#">more...</a>
-                                <!-- @231124 刪除 文字按鈕 End -->
-
                             </div>
-
-                            <!-- @231124 刪除 支付方式下拉選單
-                            <select class="form-select" aria-label="select">
-                                <option selected>橘子支付</option>
-                                <option value="1">GASH</option>
-                                <option value="2">信用卡</option>
-                                <option value="3">銀行轉帳</option>
-                                <option value="2">超商取貨付款</option>
-                                <option value="3">宅配取貨付款</option>
-                            </select>
-                            -->
-
-                            <!-- @231124 新增 商品數量輸入 Start -->
                             <div class="product-quantity">
                                 <input type="number" value="1" min="1">
                             </div>
-                            <!-- @231124 新增 商品數量輸入 End -->
-
                             <a href="#" class="btn btn-dark">立即購買</a>
                         </div>
                     </div>
@@ -534,36 +331,16 @@
                                     <li>商品內容02商品內容02商品內容02商品內容02商品內容02</li>
                                     <li>商品內容03商品內容03商品內容03商品內容03商品內容03</li>
                                 </ul>
-
-                                <!-- @231124 修改 文字按鈕 Start -->
                                 <a href="#">more...</a>
-                                <!-- @231124 刪除 文字按鈕 End -->
-
                             </div>
-
-                            <!-- @231124 刪除 支付方式下拉選單
-                            <select class="form-select" aria-label="select">
-                                <option selected>橘子支付</option>
-                                <option value="1">GASH</option>
-                                <option value="2">信用卡</option>
-                                <option value="3">銀行轉帳</option>
-                                <option value="2">超商取貨付款</option>
-                                <option value="3">宅配取貨付款</option>
-                            </select>
-                            -->
-
-                            <!-- @231124 新增 商品數量輸入 Start -->
                             <div class="product-quantity">
                                 <input type="number" value="1" min="1">
                             </div>
-                            <!-- @231124 新增 商品數量輸入 End -->
-
                             <a href="#" class="btn btn-dark">立即購買</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- 分類頁籤all-tab 內容 End -->
         </div>
     </div>
 
